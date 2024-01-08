@@ -28,7 +28,7 @@ function Shop() {
                                         <li class="box-search">
                                              <a class="icon_search header-search-icon" href="#"></a>
                                              <form role="search" method="get" class="header-search-form" action="#">
-                                                  <input type="text" value="" name="s" class="header-search-field" placeholder="Search..." />
+                                                  <input type="text" name="s" class="header-search-field" placeholder="Search..." />
                                                   <button type="submit" class="header-search-submit" title="Search">Search</button>
                                              </form>
                                         </li>
@@ -254,7 +254,7 @@ function Shop() {
                                         <div class="shop-search clearfix">
                                              <form role="search" method="get" class="search-form" action="#">
                                                   <label>
-                                                       <input type="search" class="search-field" placeholder="Searching …" value="" name="s" />
+                                                       <input type="search" class="search-field" placeholder="Searching …" name="s" />
                                                   </label>
                                              </form>
                                         </div>

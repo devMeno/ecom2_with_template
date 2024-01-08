@@ -1,6 +1,9 @@
 import React from 'react'
 
 function ShopDetails() {
+
+    const message = "Your message";
+
     return (
         <div className="header_sticky header-style-2 has-menu-extra">
 
@@ -28,7 +31,7 @@ function ShopDetails() {
                                 <li className="box-search">
                                     <a className="icon_search header-search-icon" href="#"></a>
                                     <form role="search" method="get" className="header-search-form" action="#">
-                                        <input type="text" value="" name="s" className="header-search-field" placeholder="Search..." />
+                                        <input type="text" name="s" className="header-search-field" placeholder="Search..." />
                                         <button type="submit" className="header-search-submit" title="Search">Search</button>
                                     </form>
                                 </li>
@@ -281,22 +284,24 @@ function ShopDetails() {
                                             <div className="content-inner">
                                                 <div className="inner max-width-40">
                                                     <table>
-                                                        <tr>
-                                                            <td>Weight</td>
-                                                            <td>1.73 kg</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Dimensions</td>
-                                                            <td>100 x 37 x 100 cm</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Materials</td>
-                                                            <td>80% cotton, 20% linen</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Size</td>
-                                                            <td>One Size, XL, L, M, S</td>
-                                                        </tr>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Weight</td>
+                                                                <td>1.73 kg</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Dimensions</td>
+                                                                <td>100 x 37 x 100 cm</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Materials</td>
+                                                                <td>80% cotton, 20% linen</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Size</td>
+                                                                <td>One Size, XL, L, M, S</td>
+                                                            </tr>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -353,7 +358,7 @@ function ShopDetails() {
                                                             <h5>Write a review</h5>
                                                             <p>Your email address will not be published. Required fields are marked *</p>
                                                         </div>
-                                                        <form novalidate="" className="comment-form review-form" id="commentform" method="post" action="#">
+                                                        <form noValidate="" className="comment-form review-form" id="commentform" method="post" action="#">
                                                             <p className="flat-star style-2">
                                                                 <label>Rating*:</label>
                                                                 <i className="fa fa-star"></i>
@@ -364,18 +369,18 @@ function ShopDetails() {
                                                             </p>
                                                             <p className="comment-form-comment">
                                                                 <label>Review*</label>
-                                                                <textarea className="" tabindex="4" name="comment" required> </textarea>
+                                                                <textarea className="" tabIndex="4" name="comment" value={message} required> </textarea>
                                                             </p>
                                                             <p className="comment-name">
                                                                 <label>Name*</label>
-                                                                <input type="text" aria-required="true" size="30" value="" name="name" id="name" />
+                                                                <input type="text" aria-required="true" size="30" name="name" id="name" />
                                                             </p>
                                                             <p className="comment-email">
                                                                 <label>Email*</label>
-                                                                <input type="email" size="30" value="" name="email" id="email" />
+                                                                <input type="email" size="30" name="email" id="email" />
                                                             </p>
                                                             <p className="comment-form-notify clearfix">
-                                                                <input type="checkbox" name="check-notify" id="check-notify" /> <label for="check-notify">Notify me of new posts by email</label>
+                                                                <input type="checkbox" name="check-notify" id="check-notify" /> <label htmlFor="check-notify">Notify me of new posts by email</label>
                                                             </p>
                                                             <p className="form-submit">
                                                                 <button className="comment-submit">Submit</button>
@@ -528,7 +533,7 @@ function ShopDetails() {
                             </div>
                             <div className="col-md-8">
                                 <div className="subscribe clearfix">
-                                    <form action="#" method="post" accept-charset="utf-8" id="subscribe-form">
+                                    <form action="#" method="post" acceptCharset="utf-8" id="subscribe-form">
                                         <div className="subscribe-content">
                                             <div className="input">
                                                 <input type="email" name="subscribe-email" placeholder="Your Email" />

@@ -1,6 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+    const navigate = useNavigate();
+
+    const handleGoToShop = () => {
+        navigate('/Shop');
+    }
+
+    const handleGoToContact = () => {
+        navigate('/Contact');
+    }
+
     return (
         <div className="header_sticky header-style-1 has-menu-extra">
 
@@ -72,7 +83,7 @@ function Home() {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-3col.html">SHOP</a>
+                                            <a href="shop-3col.html" onClick={handleGoToShop}>SHOP</a>
                                             <ul className="submenu">
                                                 <li>
                                                     <a href="shop-3col.html">Shop Layouts</a>
@@ -118,7 +129,7 @@ function Home() {
                                             {/* <!-- /.submenu --> */}
                                         </li>
                                         <li>
-                                            <a href="contact.html">CONTACT</a>
+                                            <a href="contact.html" onClick={handleGoToContact}>CONTACT</a>
                                             <ul className="submenu right-submenu">
                                                 <li><a href="contact.html">Contact Style 1</a></li>
                                                 <li><a href="contact-v2.html">Contact Style 2</a></li>
